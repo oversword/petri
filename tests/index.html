@@ -1,0 +1,67 @@
+<style>html,body,head{padding:0;margin:0;}</style>
+<style>
+
+	.test-object {
+
+	}
+
+	.test-object.test-has-children > .test-count:before {
+		content:'(';
+	}
+	.test-object.test-has-children > .test-count:after {
+		content:')';
+	}
+	.test-object.test-has-children > .test-count {
+		margin-right: 10px;
+	}
+	.test-object:hover {
+		cursor: pointer;
+	}
+	.test-object {
+		padding: 10px;
+		border-bottom: 1px solid #777;
+	}
+	.test-object {
+		background: #999;
+	}
+	.test-object.test-success {
+		background: #bdb;
+	}
+	.test-object.test-success:not(.test-expanded) > .test-children {
+		display: none;
+	}
+	.test-object.test-collapsed > .test-children {
+		display: none;
+	}
+	.test-object {
+		list-style-type: none;
+	}
+	.test-object > .test-children {
+		padding-inline-start: 0;
+	}
+	.test-object.test-has-children {
+		margin-left: 40px;
+	}
+
+	body > .test-object {
+		margin-left: 0px!important;
+	}
+	.test-object.test-has-children {
+		list-style-type: disclosure-closed;
+	}
+	.test-object.test-has-children.test-expanded {
+		list-style-type: disclosure-open;
+	}
+
+</style>
+<body></body>
+<script src="index.js" ></script>
+<script src="Base.js" ></script>
+<script src="Random.js" ></script>
+<!--
+<script src="Runner.js" ></script>
+<script src="Process.js" ></script>
+<script src="Problem.js" ></script>
+-->
+<script src="Neural.js" ></script>
+<script src="DNA.js" ></script>
