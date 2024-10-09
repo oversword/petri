@@ -1,4 +1,4 @@
-class Base {
+export default class Base {
 	static defaultBase = 10
 
 	static extractIndex(_,i) { return i }

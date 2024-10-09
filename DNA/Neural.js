@@ -1,4 +1,7 @@
-class DNA_Neural {
+import Neural from "../Neural.js"
+import Random from "../Random.js"
+
+export default class DNA_Neural {
 	static sigmoids = {
 		logistic: {
 			name: 'logistic',

@@ -1,4 +1,4 @@
-class Runner {
+export default class Runner {
 	static defaultInterval = 100
 	#timeout = 0
 	#interval = Runner.defaultInterval

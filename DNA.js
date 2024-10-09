@@ -1,4 +1,6 @@
-class DNA {
+import Random from "./Random.js"
+
+export default class DNA {
 	/* TERMINOLOGY:
 		dna:         BigInt:          Full string of DNA, encoded in binary
 		instruction: Array<sequence>: A gene in list format, whose length is determined by the contens of the second argument `orders`

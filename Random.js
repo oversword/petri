@@ -1,4 +1,6 @@
-class Random {
+import Base from "./Base.js"
+
+export default class Random {
 	static defaultInitialSeed = 1//Math.random()
 	static defaultStringBase = new Base()
 

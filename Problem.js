@@ -1,5 +1,7 @@
+import Random from "./Random.js"
+
 // TODO: Is this needed now the entity env knows about inputs & outputs?
-class Problem {
+export default class Problem {
 	static representitiveSampleSize = 100
 	static defaultRandom = new Random()
 
@@ -44,7 +46,10 @@ class Problem {
 		this.#generator = typeof cases === 'function'
 			? () => {
 				const input_list = Array(inputs).fill(0).map(get_float)
-				return [input_list, cases(input_list, outputs)]
+				const result = cases(input_list, outputs)
+				if (result.length === 2 && Array.isArray(result[0]) && Array.isArray(result[1]))
+					return result
+				return [input_list, result]
 			}
 			: () => random.item(cases)
 
@@ -66,3 +71,4 @@ class Problem {
 		return this.#generator()
 	}
 }
+

@@ -1,4 +1,6 @@
-class Process {
+import Runner from "./Runner.js"
+
+export default class Process {
 	static defaultConfig = {
 		watch_rest_period: 100,
 		rest_period: 20,

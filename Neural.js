@@ -1,4 +1,4 @@
-class Neural {
+export default class Neural {
 	static extractIndex(_,i) { return i }
 	static indexList(pass, v, i) {
 		pass.ret[pass.ref[i]] = v

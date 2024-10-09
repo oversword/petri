@@ -1,4 +1,4 @@
-class DNA_Turing {
+export default class DNA_Turing {
 	static new() {
 		return {
 			pointer: 0,
