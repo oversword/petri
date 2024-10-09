@@ -258,7 +258,7 @@ const main = () => {
 
 	// Press ESC to exit single culture view
 	document.onkeydown = e => {
-		if (e.keyCode === 27)
+		if (e.code === 'Escape')
 			current_culture = false
 	}
 
