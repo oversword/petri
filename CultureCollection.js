@@ -5,7 +5,7 @@ import Neural from "./Neural.js"
 import Problem from "./Problem.js"
 
 
-export class CultureCollection {
+export default class CultureCollection {
 	static defaultConfig = {
 		food: 50,
 		reproduce_food: 5,

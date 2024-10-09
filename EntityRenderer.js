@@ -1,4 +1,4 @@
-export class EntityRenderer {
+export default class EntityRenderer {
 	static calculateNodePosition(pass, layer, i) {
 		return Object.keys(layer).reduce((pass, id, j, layer_ids) => {
 			pass.node_positions[id] = {
